@@ -12,7 +12,7 @@ sudo sh -c "echo \"deb http://packages.ros.org/ros/ubuntu $DISTRO main\" > /etc/
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install cmake python-nose libgtest-dev libpoco-dev python-opencv libeigen3-dev ## needed to work on Raspberry Pi
+sudo apt-get install cmake python-nose libgtest-dev libpoco-dev python-opencv libeigen3-dev python-sip ## needed to work on Raspberry Pi
 
 ## http://wiki.ros.org/jade/Installation/Source
 sudo apt-get install python-rosdep python-rosinstall-generator python-wstool python-rosinstall build-essential
