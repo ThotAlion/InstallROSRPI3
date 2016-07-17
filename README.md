@@ -32,6 +32,9 @@ For the moment, only Jade distribution is managed. The Kinetic Distribution will
 - wait for connection before login
 - enable camera
 - exit (and reboot)
+- sudo nano /etc/dphys-swapfile
+- replace CONF_SWAPSIZE=100 by CONF_SWAPSIZE=1024
+- sudo reboot
 
 ## Install ROS
 - Execute : ``` git clone https://github.com/ThotAlion/InstallROSRPI3.git ```
