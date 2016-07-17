@@ -11,7 +11,8 @@ sudo -E apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0
 sudo sh -c "echo \"deb http://packages.ros.org/ros/ubuntu $DISTRO main\" > /etc/apt/sources.list.d/ros-latest.list"
 
 sudo apt-get update
-sudo apt-get install cmake python-nose libgtest-dev ## needed to work on Beaglebone Black
+sudo apt-get upgrade
+sudo apt-get install cmake python-nose libgtest-dev libpoco-dev python-opencv ## needed to work on Raspberry Pi
 
 ## http://wiki.ros.org/jade/Installation/Source
 sudo apt-get install python-rosdep python-rosinstall-generator python-wstool python-rosinstall build-essential
