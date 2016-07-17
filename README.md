@@ -7,3 +7,32 @@ ROS is a very efficient programming framework but on the other side it can be ve
 For the moment, only Jade distribution is managed. The Kinetic Distribution will be available directly from apt-get in few months.
 
 # First steps
+## Hardware
+- 1 Raspberry Pi 3 Model B
+- 1 Internet connection
+- 1 USB smartphone charger (more than 2A)
+- 1 MicroSD card with high performances if possible.
+
+## Flash the SDcard (for Windows users)
+- Download the Jessie Image for Raspberry Pi
+- Download 7zip software
+- Download Win32 disk imager
+- Format the SD card
+- Open win32 disk image and flash the SD card with the Jessie Image
+- Once it is flashed (can take some minutes) Insert the SD card in the Raspberry Pi
+- Plug the Raspberry Pi 3 (Ethernet cable + power supply)
+
+## First boot
+- Connect via SSH on the Raspberry Pi
+- login : pi; password : raspberry
+- Execute : ``` sudo raspi-config ```
+- Expand file system
+- autologin after boot in console mode
+- wait for connection before login
+- enable camera
+- exit (and reboot)
+
+## Install ROS
+- Execute : ``` git clone https://github.com/ThotAlion/InstallROSRPI3.git ```
+- Execute : ```cd InstallROSRPI3```
+- Execute : ```./install_ROS.sh```
