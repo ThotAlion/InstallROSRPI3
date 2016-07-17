@@ -14,9 +14,10 @@ For the moment, only Jade distribution is managed. The Kinetic Distribution will
 - 1 MicroSD card with high performances if possible.
 
 ## Flash the SDcard (for Windows users)
-- Download the Jessie Image for Raspberry Pi
-- Download 7zip software
-- Download Win32 disk imager
+- Download the [Jessie Image for Raspberry Pi](https://www.raspberrypi.org/downloads/raspbian/) Not the "Lite" one
+- Download [7zip software](http://www.7-zip.org/)
+- Download [Win32diskImager](https://sourceforge.net/projects/win32diskimager/)
+- Unzip the Jessie image
 - Format the SD card
 - Open win32 disk image and flash the SD card with the Jessie Image
 - Once it is flashed (can take some minutes) Insert the SD card in the Raspberry Pi
