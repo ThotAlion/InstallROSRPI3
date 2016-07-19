@@ -23,8 +23,8 @@ rosdep update
 mkdir ~/ros_catkin_ws
 cd    ~/ros_catkin_ws
 
-rosinstall_generator perception --rosdistro jade --deps --wet-only --tar > jade-perception-wet.rosinstall
-wstool init -j8 src jade-perception-wet.rosinstall
+rosinstall_generator image_pipeline --rosdistro jade --deps --wet-only --tar > jade-image_pipeline-wet.rosinstall
+wstool init -j8 src jade-image_pipeline-wet.rosinstall
 
 sudo apt-get install -y libboost-all-dev python-empy libconsole-bridge-dev libtinyxml-dev liblz4-dev libbz2-dev
 ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release
