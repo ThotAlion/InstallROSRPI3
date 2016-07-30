@@ -26,6 +26,9 @@ cd    ~/ros_catkin_ws
 rosinstall_generator robot --rosdistro jade --deps --wet-only --tar > jade-robot-wet.rosinstall
 wstool init -j8 src jade-robot-wet.rosinstall
 
+rm -rf ./src/robot_model/
+rm -rf ./src/robot_state_publisher/
+
 sudo apt-get install -y libboost-all-dev python-empy libconsole-bridge-dev libtinyxml-dev liblz4-dev libbz2-dev
 ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release -DASSIMP_UNIFIED_HEADER_NAMES=ON
 
