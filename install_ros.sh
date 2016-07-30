@@ -12,7 +12,7 @@ sudo sh -c "echo \"deb http://packages.ros.org/ros/ubuntu $DISTRO main\" > /etc/
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install cmake python-nose libgtest-dev libpoco-dev libeigen3-dev sip-dev libopencv-dev uuid-dev libyaml-cpp-dev libcurl4-gnutls-dev## needed to work on Raspberry Pi
+sudo apt-get install cmake python-nose libgtest-dev libpoco-dev libeigen3-dev sip-dev libopencv-dev uuid-dev libyaml-cpp-dev libcurl4-gnutls-dev liburdfdom-headers-dev libassimp-dev collada-dom-dev liburdfdom-dev## needed to work on Raspberry Pi
 
 ## http://wiki.ros.org/jade/Installation/Source
 sudo apt-get install python-rosdep python-rosinstall-generator python-wstool python-rosinstall build-essential
@@ -27,6 +27,6 @@ rosinstall_generator robot --rosdistro jade --deps --wet-only --tar > jade-robot
 wstool init -j8 src jade-robot-wet.rosinstall
 
 sudo apt-get install -y libboost-all-dev python-empy libconsole-bridge-dev libtinyxml-dev liblz4-dev libbz2-dev
-./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release
+./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release -DASSIMP_UNIFIED_HEADER_NAMES=ON
 
 sudo apt-get install python-netifaces
